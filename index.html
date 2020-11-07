@@ -3,7 +3,6 @@
 
 <head>
     <title>weewoo</title>
-    <link rel="icon" href="imgs/top.webp">
     <link rel="stylesheet" type="text/css" href="styles/style.css" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="weewoo">
@@ -11,13 +10,19 @@
     <meta property="og:description" content="weewoo.xyz" />
     <meta property="og:url" content="weewoo.xyz" />
     <meta name="theme-color" content="#fffffe">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
+    <script src="scripts/script.js"></script>
 </head>
-<body>
+<body class="preload" onselectstart="return false">
+
+    <video autoplay loop id="video">
+        <source id="vidSource" type="video/mp4"/>
+    </video>
 
     <div id="content">
-        <h1>weewoo.</h1>
+        <a href="javascript:void(0);" onclick="rickRoll();" draggable="false" id="url"><h1 id="rickroll">weewoo.</h1></a>
         
-        <a href="https://discord.gg/weewoo" id="button">join us</a>
+        <a href="https://discord.gg/weewoo" id="button" draggable="false">join us</a>
     </div>
 
 </body>

@@ -24,6 +24,14 @@ body {
     margin: 0;
     background-position: center center;
     background-attachment: fixed;
+    transition-duration: 0.3s;
+}
+
+#video {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #content {
@@ -57,6 +65,12 @@ body {
     font-size: 3rem;
     margin-bottom: 2rem;
     font-weight: 700;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+#content h1:hover {
+    font-size: 3.5rem;
 }
 
 #content a {
@@ -69,4 +83,13 @@ body {
     background-color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 2rem;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    display: none !important;
 }
