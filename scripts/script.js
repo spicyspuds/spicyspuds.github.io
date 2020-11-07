@@ -5,7 +5,7 @@ $(window).on("load", function() {
 let final = "dont click again."
 let stage = 0
 
-function rickRoll() {
+function spawnRickAstley() {
     console.log(stage)
     if (stage == 0) {
         stage = 1
