@@ -22,8 +22,6 @@ function rickRoll() {
                 stage = 3
                 return clearInterval(d)
             }
-            
-            console.log(curr)
 
             if (stage == 1) {
                 document.getElementById("rickroll").innerText = curr.substr(0, curr.length - 1)
